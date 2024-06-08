@@ -14,3 +14,7 @@ sudo a2enmod php7.4
 sudo apt install -y libapache2-mod-php7.4
 
 sudo systemctl restart apache2
+
+# install dependencies
+sudo apt install -y php-zip php-curl php7.4-xml php-imagick php7.4-mbstring
+
