@@ -5,7 +5,9 @@ sudo apt install -y mysql-server
 sudo systemctl enable mysql
 
 # Set default password
-# DATABASE_PASSWORD="potato"
+read -p "Enter database passowrd [potato]: " DATABASE_PASSWORD
+DATABASE_PASSWORD = ${DATABASE_PASSWORD:-potato}
+echo "Using database password" $DATABASE_PASSWORD
 
 # Create a temporary MySQL config file
 # TEMP_MYSQL_CONF=$(mktemp)
